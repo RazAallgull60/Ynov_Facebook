@@ -12,7 +12,6 @@ const Container = styled.SafeAreaView`
 	flex: 1;
 `
 
-
 const Home = ({routes}) =>{
     return (
 		<>
