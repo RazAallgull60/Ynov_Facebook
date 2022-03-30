@@ -95,12 +95,101 @@ const FilActu = () => {
 				<Header>
 					<Row>
 						<Profil
+							source={require('../../../assets/user1.jpg')}
+						/>
+						<View style={{ paddingLeft: 10 }}>
+							<User>REACT NATIVE MAN</User>
+							<Row>
+								<Time>2 jours</Time>
+								<Entypo
+									name='dot-single'
+									size={12}
+									color='#747476'
+								/>
+								<Entypo
+									name='globe'
+									size={10}
+									color='#747476'
+								/>
+							</Row>
+						</View>
+					</Row>
+
+					<Entypo
+						name='dots-three-horizontal'
+						size={15}
+						color='#222121'
+					/>
+				</Header>
+
+				<Post>Merci à mon intervenant pour m'avoir fait découvrir React-Native :) !</Post>
+				<Photo source={require('../../../assets/post3.jpg')} />
+
+				<Footer>
+					<FooterCount>
+						<Row>
+							<IconCount>
+								<AntDesign
+									name='like1'
+									size={12}
+									color='#FFFFFF'
+								/>
+							</IconCount>
+							<TextCount>2K</TextCount>
+						</Row>
+						<TextCount>808 commentaires</TextCount>
+					</FooterCount>
+
+					<Separator />
+
+					<FooterMenu>
+						<Button>
+							<Icon>
+								<AntDesign
+									name='like2'
+									size={20}
+									color='#424040'
+								/>
+							</Icon>
+							<Text>Like</Text>
+						</Button>
+
+						<Button>
+							<Icon>
+								<MaterialCommunityIcons
+									name='comment-outline'
+									size={20}
+									color='#424040'
+								/>
+							</Icon>
+							<Text>Commentaire</Text>
+						</Button>
+
+						<Button>
+							<Icon>
+								<MaterialCommunityIcons
+									name='share-outline'
+									size={20}
+									color='#424040'
+								/>
+							</Icon>
+							<Text>Partager</Text>
+						</Button>
+					</FooterMenu>
+				</Footer>
+				<BottomDivider />
+			</Container>
+
+			<Container>
+				<Header>
+					<Row>
+						<Profil
 							source={require('../../../assets/user3.jpg')}
 						/>
 						<View style={{ paddingLeft: 10 }}>
 							<User>Elyes NK</User>
 							<Row>
-								<Time>9m</Time>
+								<Time>9 mois</Time>
 								<Entypo
 									name='dot-single'
 									size={12}
@@ -191,7 +280,7 @@ const FilActu = () => {
 						<View style={{ paddingLeft: 10 }}>
 							<User>ZEPECK</User>
 							<Row>
-								<Time>9m</Time>
+								<Time>5 heures</Time>
 								<Entypo
 									name='dot-single'
 									size={12}
@@ -270,6 +359,8 @@ const FilActu = () => {
 				</Footer>
 				<BottomDivider />
 			</Container>
+
+			
 		</>
 	)
 }
