@@ -6,14 +6,13 @@ import Login from '../../screen/login'
 
 const Stack = createNativeStackNavigator();
 
-
 const Routes = () => {
     return(
         <NavigationContainer>           
-                <Stack.Navigator>
-                <Stack.Screen color="black" name='Authentification' component={Login}/>
-                <Stack.Screen  name='Home' component={Home} /> 
-                </Stack.Navigator>
+            <Stack.Navigator>
+            <Stack.Screen color="black" name='Authentification' component={Login}/>
+            <Stack.Screen  name='Home' component={Home} /> 
+            </Stack.Navigator>
 
         </NavigationContainer>
     )

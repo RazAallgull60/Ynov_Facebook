@@ -5,21 +5,16 @@ import styled from 'styled-components/native'
 const Login = ({navigation}) =>{
 
     const handleSubmit = () => {
-       
-                navigation.navigate('Home')
-                         
-    
+      navigation.navigate('Home')                       
     }
+
     return (
 		<>
-			   <Text> Identifiant </Text>
-               <TextInput></TextInput>
-               <Text>Mot de passe</Text>
-               <TextInput></TextInput>
-               <Button title="Connexion"
-                onPress={handleSubmit}
-                />
-				
+			<Text> Identifiant </Text>
+      <TextInput></TextInput>
+      <Text>Mot de passe</Text>
+      <TextInput></TextInput>
+      <Button title="Connexion" onPress={handleSubmit}/>				
 		</>
 	)
 }
